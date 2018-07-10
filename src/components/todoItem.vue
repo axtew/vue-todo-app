@@ -13,7 +13,6 @@
           .desc {{todo.desc}}
       .item-bottom
         span.create-span.create-year Создан {{todo.date.day}}.{{todo.date.mounth}}.{{todo.date.year}}
-        span.create-span.create-time {{todo.date.hour}}:{{todo.date.minute}}
         span.create-span.time-after-create ({{formatDate(todo.date.year, todo.date.mounth, todo.date.day, todo.date.hour, todo.date.minute, todo.date.timeZone)}})
     .button
       button(
