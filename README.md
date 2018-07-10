@@ -2,7 +2,7 @@
 
 > A Vue.js project
 
-https://axtew.github.io/vue-todo-app/
+Project link: https://axtew.github.io/vue-todo-app/
 
 ## Build Setup
 
