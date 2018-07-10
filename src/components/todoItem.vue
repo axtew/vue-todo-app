@@ -66,18 +66,16 @@ export default {
         return h + ' ч. назад';
       }
 
-      // форматировать дату, с учетом того, что месяцы начинаются с 0
-      var d = date;
-      d = [
-        '0' + d.getDate(),
-        '0' + (d.getMonth() + 1),
-        '' + d.getFullYear(),
-        '0' + d.getHours(),
-        '0' + d.getMinutes()
-      ];
+      let d = Math.floor(h / 24);
 
-      for (var i = 0; i < d.length; i++) {
-        d[i] = d[i].slice(-2);
+      if (d < 30) {
+        return h + ' д. назад';
+      }
+
+      let m = Math.floor(d / 30);
+
+      if (m < 12) {
+        return h + ' м. назад';
       }
     }
   }
