@@ -1,0 +1,84 @@
+.todo-item {
+  display: flex;
+  align-items: center;
+
+  * {
+    user-select: none;
+  }
+
+  &:hover {
+    .remove {
+      visibility: visible;
+    }
+  }
+}
+
+.checked {
+  .title,
+  .desc {
+    text-decoration: line-through;
+    color: #ccc;
+  }
+}
+
+.label {
+  width: 100%;
+}
+
+.item-top {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.input-block {
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  padding-top: 10px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  display: block;
+  line-height: 1.2;
+  transition: color 0.4s;
+}
+
+.desc {
+  font-size: 20px;
+  line-height: 22px;
+  margin-bottom: 10px;
+  transition: color 0.4s;
+}
+
+.item-bottom {
+  font-size: 12px;
+  margin-left: 60px;
+  line-height: 14px;
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.create-span {
+  margin-right: 5px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.button {
+  width: 40px;
+  margin-left: auto;
+}
+
+.remove {
+  background: transparent;
+  border: none;
+  color: firebrick;
+  cursor: pointer;
+  visibility: hidden;
+}
