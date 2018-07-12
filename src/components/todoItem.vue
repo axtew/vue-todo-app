@@ -46,8 +46,6 @@ export default {
 
       let timeZoneE = (-dateNow.getTimezoneOffset() - -timeZone) * 60000;
 
-      console.log(timeZoneE);
-
       let diff = dateNow - date - timeZoneE;
       let sec = Math.floor(diff / 1000);
       let min = Math.floor(sec / 60);
@@ -62,7 +60,7 @@ export default {
 
       let h = Math.floor(min / 60);
 
-      if (h < 60) {
+      if (h < 24) {
         return h + ' ч. назад';
       }
 
