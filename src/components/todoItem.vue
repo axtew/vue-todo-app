@@ -67,13 +67,13 @@ export default {
       let d = Math.floor(h / 24);
 
       if (d < 30) {
-        return h + ' д. назад';
+        return d + ' д. назад';
       }
 
       let m = Math.floor(d / 30);
 
       if (m < 12) {
-        return h + ' м. назад';
+        return m + ' м. назад';
       }
     }
   }
